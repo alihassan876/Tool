@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online file converter for images, videos, and documents. Convert between 100+ formats without software installation. Fast, secure, and easy to use.">
+    <meta name="keywords" content="file converter, image converter, video converter, document converter, online converter, PDF to Word, MP4 to MOV, PNG to JPG">
+    <meta name="author" content="UniversalConverterPro">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Universal File Converter - Convert Images, Videos & Documents Online">
+    <meta property="og:description" content="Free online tool to convert between file formats instantly. No registration required. Preserve quality while reducing file size.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com">
+    
+    <title>Universal File Converter | Convert Images, Videos & Documents Online</title>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Universal File Converter",
+      "url": "https://yourwebsite.com",
+      "description": "Free online tool to convert between image, video and document formats",
+      "applicationCategory": ["UtilityApplication", "MultimediaApplication"],
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1243"
+      }
+    }
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_AD_SENSE_ID" crossorigin="anonymous"></script>
+    
+    <style>
+        :root {
+            --primary-color: #4a6bff;
+            --secondary-color: #6c5ce7;
+            --accent-color: #fd79a8;
+            --success-color: #00b894;
+            --warning-color: #fdcb6e;
+            --danger-color: #d63031;
+            --light-gray: #f5f6fa;
+            --medium-gray: #dfe6e9;
+            --dark-gray: #2d3436;
+            --text-color: #2d3436;
+            --text-light: #636e72;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            padding: 0;
+            margin: 0;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo-icon {
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            background-color: #3a5ae8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .main {
+            padding: 2rem 0;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(74, 107, 255, 0.1) 0%, rgba(108, 92, 231, 0.1) 100%);
+            z-index: -1;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-gray);
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .secondary-button {
+            background-color: white;
+            color: var(--dark-gray);
+            border: 1px solid var(--medium-gray);
+        }
+        
+        .secondary-button:hover {
+            background-color: var(--light-gray);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Features Section */
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: var(--dark-gray);
+        }
+        
+        .section-title p {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(74, 107, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .feature-card p {
+            color: var(--text-light);
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            background-color: white;
+            border-radius: 10px;
+            padding: 4rem 2rem;
+            margin: 4rem 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            counter-reset: step-counter;
+            margin-top: 3rem;
+        }
+        
+        .step {
+            position: relative;
+            padding-top: 4rem;
+            text-align: center;
+        }
+        
+        .step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .step h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .step p {
+            color: var(--text-light);
+        }
+        
+        /* Supported Formats */
+        .formats-section {
+            margin: 4rem 0;
+        }
+        
+        .formats-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .format-tab {
+            padding: 0.5rem 1.5rem;
+            background: none;
+            border: none;
+            border-radius: 20px;
+            font-weight: 500;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .format-tab.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .format-tab:hover:not(.active) {
+            background-color: var(--light-gray);
+        }
+        
+        .formats-grid {
+            display: none;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .formats-grid.active {
+            display: grid;
+        }
+        
+        .format-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+        
+        .format-item:hover {
+            background-color: var(--light-gray);
+        }
+        
+        .format-icon {
+            font-size: 1.2rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            margin: 4rem 0;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .author-info h4 {
+            margin-bottom: 0.25rem;
+        }
+        
+        .author-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(74, 107, 255, 0.1) 0%, rgba(108, 92, 231, 0.1) 100%);
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-section p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Ad Containers */
+        .ad-container {
+            margin: 3rem 0;
+            text-align: center;
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--light-gray);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .ad-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-section p {
+            color: #b2bec3;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-section ul li a {
+            color: #b2bec3;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            margin-top: 1.5rem;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 0.9rem;
+        }
+        
+        .newsletter-button {
+            padding: 0 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .newsletter-button:hover {
+            background-color: #3a5ae8;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b2bec3;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button, .secondary-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .feature-card {
+                padding: 1.5rem;
+            }
+            
+            .steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .step {
+                padding-top: 3.5rem;
+                padding-bottom: 1.5rem;
+                text-align: center;
+            }
+            
+            .step::before {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔄</span>
+                <span>UniversalConverter</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/converter">Converter</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#formats">Formats</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                </ul>
+            </nav>
+            <a href="/converter" class="cta-button">Convert Files Now</a>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Convert Files Between Any Format in Seconds</h1>
+                    <p>Free online tool to convert images, videos, and documents. No installation required. Preserve quality while reducing file size.</p>
+                    <div class="hero-buttons">
+                        <a href="/converter" class="cta-button">Start Converting Now</a>
+                        <a href="#how-it-works" class="cta-button secondary-button">How It Works</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Top Ad Banner -->
+            <div class="ad-container">
+                <!-- Replace with your AdSense ad unit -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_AD_SENSE_ID"
+                     data-ad-slot="YOUR_AD_SLOT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <!-- Features Section -->
+            <section id="features" class="features-section">
+                <div class="section-title">
+                    <h2>Why Choose Our File Converter</h2>
+                    <p>Fast, secure, and easy-to-use tool with powerful conversion capabilities</p>
+                </div>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Convert files in seconds with our optimized processing engine. No waiting in queues.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>100% Secure</h3>
+                        <p>Files are processed in your browser and never uploaded to our servers. Your privacy is guaranteed.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>High Quality</h3>
+                        <p>Advanced algorithms preserve quality while converting between formats and compressing files.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💯</div>
+                        <h3>Free Forever</h3>
+                        <p>No hidden costs or subscriptions. Convert as many files as you need, completely free.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Browser-Based</h3>
+                        <p>Works on any device with a web browser. No software installation required.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>100+ Formats</h3>
+                        <p>Supports all popular image, video, and document formats with more added regularly.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- How It Works Section -->
+            <section id="how-it-works" class="how-it-works">
+                <div class="section-title">
+                    <h2>How To Convert Your Files</h2>
+                    <p>Convert files in just a few simple steps</p>
+                </div>
+                
+                <div class="steps">
+                    <div class="step">
+                        <h3>Upload Your File</h3>
+                        <p>Drag and drop your file or click to browse. We support images, videos and documents up to 50MB.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Select Output Format</h3>
+                        <p>Choose from dozens of supported formats for conversion. We'll suggest the best options.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Adjust Settings</h3>
+                        <p>Customize quality, resolution and other parameters as needed for perfect results.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Download Result</h3>
+                        <p>Get your converted file instantly. No registration required - start using right away.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Middle Ad Banner -->
+            <div class="ad-container">
+                <!-- Replace with your AdSense ad unit -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_AD_SENSE_ID"
+                     data-ad-slot="YOUR_AD_SLOT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <!-- Supported Formats Section -->
+            <section id="formats" class="formats-section">
+                <div class="section-title">
+                    <h2>Supported File Formats</h2>
+                    <p>Convert between all popular formats with our universal converter</p>
+                </div>
+                
+                <div class="formats-tabs">
+                    <button class="format-tab active" data-tab="image">Image Formats</button>
+                    <button class="format-tab" data-tab="video">Video Formats</button>
+                    <button class="format-tab" data-tab="document">Document Formats</button>
+                </div>
+                
+                <div id="image-formats" class="formats-grid active">
+                    <div class="format-item">
+                        <span class="format-icon">🖼️</span>
+                        <span>JPG/JPEG</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🖼️</span>
+                        <span>PNG</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🖼️</span>
+                        <span>GIF</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🖼️</span>
+                        <span>WebP</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🖼️</span>
+                        <span>BMP</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🖼️</span>
+                        <span>TIFF</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🖼️</span>
+                        <span>SVG</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🖼️</span>
+                        <span>ICO</span>
+                    </div>
+                </div>
+                
+                <div id="video-formats" class="formats-grid">
+                    <div class="format-item">
+                        <span class="format-icon">🎬</span>
+                        <span>MP4</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🎬</span>
+                        <span>MOV</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🎬</span>
+                        <span>AVI</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🎬</span>
+                        <span>MKV</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🎬</span>
+                        <span>WMV</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🎬</span>
+                        <span>FLV</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🎬</span>
+                        <span>WebM</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">🎬</span>
+                        <span>GIF</span>
+                    </div>
+                </div>
+                
+                <div id="document-formats" class="formats-grid">
+                    <div class="format-item">
+                        <span class="format-icon">📄</span>
+                        <span>PDF</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">📄</span>
+                        <span>DOCX</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">📄</span>
+                        <span>XLSX</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">📄</span>
+                        <span>PPTX</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">📄</span>
+                        <span>TXT</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">📄</span>
+                        <span>RTF</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">📄</span>
+                        <span>ODT</span>
+                    </div>
+                    <div class="format-item">
+                        <span class="format-icon">📄</span>
+                        <span>HTML</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <div class="section-title">
+                    <h2>What Our Users Say</h2>
+                    <p>Trusted by thousands of users worldwide</p>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "This is hands down the best online converter I've used. The quality is amazing and it's so fast. I use it daily for my design work."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SD</div>
+                            <div class="author-info">
+                                <h4>Sarah Davis</h4>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "As a student, I need to convert files all the time. This tool saves me so much time and works perfectly every time. Highly recommended!"
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MJ</div>
+                            <div class="author-info">
+                                <h4>Michael Johnson</h4>
+                                <p>University Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "I was skeptical about online converters, but this one changed my mind. The files stay private and the quality is excellent. 5 stars!"
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">ET</div>
+                            <div class="author-info">
+                                <h4>Emily Thompson</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <h2>Ready to Convert Your Files?</h2>
+                <p>Join thousands of satisfied users who convert files quickly and easily every day</p>
+                <a href="/converter" class="cta-button">Start Converting Now - It's Free</a>
+            </section>
+            
+            <!-- Bottom Ad Banner -->
+            <div class="ad-container">
+                <!-- Replace with your AdSense ad unit -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_AD_SENSE_ID"
+                     data-ad-slot="YOUR_AD_SLOT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UniversalConverter</h3>
+                    <p>Free online tool to convert between file formats quickly and easily. No registration required.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/converter">File Converter</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#formats">Supported Formats</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new features and formats.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-button">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> UniversalConverter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Format tabs functionality
+        const formatTabs = document.querySelectorAll('.format-tab');
+        const formatGrids = document.querySelectorAll('.formats-grid');
+        
+        formatTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and grids
+                formatTabs.forEach(t => t.classList.remove('active'));
+                formatGrids.forEach(g => g.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding grid
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(`${tabId}-formats`).classList.add('active');
+            });
+        });
+        
+        // FAQ toggle functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Initialize AdSense ads
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
